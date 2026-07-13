@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS Product;
+
+CREATE TABLE product (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    price DECIMAL(10, 2) NOT NULL,
+    quantity INTEGER NOT NULL DEFAULT 0
+);
